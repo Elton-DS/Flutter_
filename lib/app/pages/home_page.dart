@@ -7,6 +7,13 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('Projeto Git'),
       ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(child:Icon(Icons.person)),
+          ],
+        ),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
