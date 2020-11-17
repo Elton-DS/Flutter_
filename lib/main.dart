@@ -13,6 +13,16 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('Projeto Git'),
       ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            FlutterLogo(
+              size: 120.0,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
