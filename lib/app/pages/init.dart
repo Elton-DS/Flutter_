@@ -12,7 +12,7 @@ class _InitState extends State<Init> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 2), () => Get.toNamed('/home'));
+    Timer(Duration(seconds: 3), () => Get.toNamed('/home'));
   }
 
   @override
@@ -22,7 +22,10 @@ class _InitState extends State<Init> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircularProgressIndicator(),
+            FlutterLogo(
+              size: 120.0,
+            ),
+            //CircularProgressIndicator(),
           ],
         ),
       ),
