@@ -23,6 +23,50 @@ class Home extends StatelessWidget {
           ],
         ),
       ),
+      body: GridView.count(
+        mainAxisSpacing: 10,
+        crossAxisSpacing: 10,
+        crossAxisCount: 2,
+        children: [
+          
+          Container(            
+            width: 50,
+            height: 50,
+            color: Colors.blue,
+            child: Text('Bloco 01'),
+          ),
+           Container(
+            width: 50,
+            height: 50,
+            color: Colors.cyan,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.green,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.cyan,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.cyan,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.cyan,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.cyan,
+          ),
+        ],
+        ),
     );
   }
 }
