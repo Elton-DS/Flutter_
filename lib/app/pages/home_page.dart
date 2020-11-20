@@ -6,16 +6,16 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),        
+        title: Text('Home'),
       ),
       drawer: Drawer(
         child: ListView(
           children: [
-            DrawerHeader(child:Icon(Icons.person)),
+            DrawerHeader(child: Icon(Icons.person)),
             ListTile(
               title: Text('Contador'),
               leading: Icon(Icons.add),
-              onTap: (){
+              onTap: () {
                 //Rota para próxima página
                 Get.toNamed('/contador');
               },
@@ -23,50 +23,49 @@ class Home extends StatelessWidget {
           ],
         ),
       ),
+      
       body: GridView.count(
-        mainAxisSpacing: 10,
-        crossAxisSpacing: 10,
+        mainAxisSpacing: 5,
+        crossAxisSpacing: 5,
         crossAxisCount: 2,
         children: [
-          
-          Container(            
-            width: 50,
-            height: 50,
-            color: Colors.blue,
-            child: Text('Bloco 01'),
-          ),
-           Container(
-            width: 50,
-            height: 50,
-            color: Colors.cyan,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.cyan,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.cyan,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.cyan,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.cyan,
-          ),
+          Card(
+
+              //color: Colors.blue,
+              elevation: 5,
+              child: IconButton(
+                  icon: Icon(Icons.add_photo_alternate_outlined),
+                  onPressed: () {
+                    Get.defaultDialog(title: 'Adicionado');
+                  })),
+          Card(
+              elevation: 5,
+              //color: Colors.blue,
+              child: IconButton(
+                  icon: Icon(Icons.add_photo_alternate_outlined),
+                  onPressed: () {
+                    Get.defaultDialog(title: 'Adicionado');
+                  })),
+          Card(
+
+              //color: Colors.blue,
+              elevation: 5,
+              child: IconButton(
+                  icon: Icon(Icons.add_photo_alternate_outlined),
+                  onPressed: () {
+                    Get.defaultDialog(title: 'Adicionado');
+                  })),
+          Card(
+
+              //color: Colors.blue,
+              elevation: 5,
+              child: IconButton(
+                  icon: Icon(Icons.add_photo_alternate_outlined),
+                  onPressed: () {
+                    Get.defaultDialog(title: 'Adicionado');
+                  })),
         ],
-        ),
+      ),
     );
   }
 }
